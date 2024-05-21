@@ -1,0 +1,62 @@
+/* For viewports with a 16/9 aspect ratio or wider */
+@media (min-aspect-ratio: 4/3) {
+    figure {
+        width: 40%;
+    }
+}
+
+/* For viewports narrower than a 16/9 aspect ratio */
+@media (max-aspect-ratio: 4/3) {
+    figure {
+        width: 80%;
+    }
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: saddlebrown;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.rainbow-text {
+    font-weight: 900;
+    font-size: 4em;
+    padding-left: 1.8rem;
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.15rem;
+    color: var(--rainbow-text-base-color);
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+footer {
+    background-color: #101010;
+}
+figcaption {
+    text-align: center;
+}
